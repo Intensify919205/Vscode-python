@@ -1,0 +1,52 @@
+from turtle import*
+t=Turtle()
+s=Screen()
+t.speed(15)
+t.width(5)
+s.bgcolor("black")
+t.color("white")
+#making stars
+def star(x,y):
+  t.pu()
+  t.goto(x,y)
+  t.pd()
+  for i in range(5):
+    t.fd(10)
+    t.rt(144)
+
+star(-10,100)
+star(-170,90)
+star(30,190)
+star(10,130)
+star(50,80)
+star(190,120)
+star(-110,150)
+star(-60,90)
+star(90,170)
+star(60,16)
+star(120,137)
+star(111,111)
+star(193,190)
+star(-187,163)
+#making moon
+t.pu()
+t.goto(-160,140)
+t.pd()
+
+t.dot(100)
+t.pu()
+t.goto(-200,-150)
+t.pd()
+t.pencolor("green")
+t.fillcolor("green")
+t.begin_fill()
+for j in range(2):
+  t.fd(400)
+  t.rt(90)
+  t.fd(50)
+  t.rt(90)
+t.end_fill()
+#making the house
+t.pu()
+t.goto(-150,-120)
+t.pd()

@@ -1,0 +1,75 @@
+from turtle import*
+t=Turtle()
+s=Screen()
+t.speed(20)
+s.bgcolor("black")
+#asking for user input
+friend = input("who is your best friend?")
+if friend == "khushaansh":
+  #drawing a face and filling w:
+  t.pu()
+  t.goto(-50,-100)
+  t.pd()
+  t.fillcolor("yellow")
+  t.begin_fill()
+  t.circle(100)
+  t.end_fill()
+  t.pu()
+  t.goto(-110,50)
+  t.pd()
+  t.fillcolor("blue")
+  t.begin_fill()
+  for j in range(2):
+    t.fillcolor("blue")
+    t.begin_fill()
+    for i in range(5):
+      t.fd(50)
+      t.rt(144)
+    
+    t.end_fill()
+    t.pu()
+    t.fd(80)
+    t.pd()
+    
+    
+    
+  t.pu()
+  t.goto(-80,-30)
+  t.pd()
+  t.rt(90)
+  t.fillcolor("red")
+  t.begin_fill()
+  t.circle(30,180)
+  t.end_fill()
+  
+else:
+  t.pu()
+  t.goto(-50,-100)
+  t.pd()
+  t.fillcolor("yellow")
+  t.begin_fill()
+  t.circle(100)
+  t.end_fill()
+  t.pu()
+  t.goto(-110,50)
+  t.pd()
+  t.fillcolor("black")
+  t.begin_fill()
+  t.rt(60)
+  t.width(10)
+  t.fd(20)
+  t.pu()
+  t.lt(60)
+  t.fd(70)
+  t.lt(70)
+  t.pd()
+  t.fd(20)
+  t.width(5)
+  t.pu()
+  t.goto(-30,-80)
+  t.pd()
+  t.fillcolor("red")
+  t.begin_fill()
+  
+  t.circle(30,205)
+  
